@@ -4,61 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
+
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification" content="DYJRfaCRv2A7svif6_JoSm2FKoJXmsi5JvRkcrHzt1E" />
+
   <!-- Performance Optimizations -->
   <link rel="preload" href="/css/unified_identity.css" as="style" />
   <link rel="stylesheet" href="/css/unified_identity.css" />
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
-  
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
   <!-- SEO Optimizations -->
   <meta name="description" content="منصة DIY - مجتمع المبدعين العرب للتصنيع الذاتي والإبداع والابتكار" />
   <meta name="keywords" content="DIY, تصنيع ذاتي, إبداع, مجتمع عربي, مشاريع يدوية, ابتكار, حرف يدوية" />
   <link rel="canonical" href="https://www.aemelhabarak.com<%= typeof canonicalUrl !== 'undefined' ? canonicalUrl : '' %>" />
-  
+
   <!-- Mobile Enhancements -->
   <meta name="theme-color" content="#FF6B00" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  
+
   <!-- Error Handling -->
   <script src="/js/error-handler.js" defer></script>
-  
+
   <!-- Notification System -->
   <script src="/js/notification-integration.js" defer></script>
-  
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon/logo.png" sizes="32x32" />
   <link rel="shortcut icon" href="/favicon/logo.png" type="image/png" />
-  
-  <!-- Apple Touch Icon for iOS -->
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/logo.png" />
-  <!-- Fallback favicon.ico for legacy browsers -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  
+
   <style>
-    /* Reset and Base Styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Cairo', sans-serif;
-      
     }
-    
-    /* Header Styles */
+
     .header-container {
       background-color: #ffffff;
       width: 100%;
@@ -67,18 +64,16 @@
       justify-content: space-between;
       align-items: center;
     }
-    
-    /* Logo Styles */
+
     .logo-container {
       margin-left: auto;
     }
-    
+
     .logo-container img {
       height: 50px;
       width: auto;
     }
 
-    /* Mobile Navigation Icons */
     .mobile-nav {
       display: none;
       gap: 1rem;
@@ -189,46 +184,48 @@
       color: #fff;
     }
 
-    /* Show mobile nav only on mobile screens */
     @media (max-width: 768px) {
       .mobile-nav {
         display: flex;
       }
+
       .mobile-dropdown-menu {
         left: 0;
         right: auto;
         background: #fff;
         border-radius: 18px 18px 22px 22px;
         box-shadow: 0 8px 32px rgba(255, 107, 0, 0.18), 0 1.5px 8px rgba(0,0,0,0.08);
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
         min-width: 220px;
         animation: mobileMenuFadeIn 0.35s cubic-bezier(.4,2,.6,1) both;
         border: 1.5px solid #ffe0c2;
         z-index: 9999;
       }
+
       .mobile-dropdown-menu a, .mobile-dropdown-menu button {
         font-size: 0.93rem;
         padding: 13px 22px;
         border-radius: 12px;
         margin: 0 8px 7px 8px;
       }
-      .mobile-dropdown-menu a:last-child, .mobile-dropdown-menu button:last-child {
-        border-bottom: none;
-      }
+
       .mobile-dropdown-menu a:hover, .mobile-dropdown-menu button:hover {
         background: linear-gradient(90deg, #FF6B00 60%, #FFA500 100%);
         color: #fff !important;
         box-shadow: 0 2px 8px rgba(255, 107, 0, 0.08);
       }
+
       .mobile-dropdown-menu a i, .mobile-dropdown-menu button i {
         color: #FF6B00;
         font-size: 1.2em;
         margin-left: 8px;
         transition: color 0.2s;
       }
+
       .mobile-dropdown-menu a:hover i, .mobile-dropdown-menu button:hover i {
         color: #fff;
       }
+
       @keyframes mobileMenuFadeIn {
         from { opacity: 0; transform: translateY(-12px); }
         to   { opacity: 1; transform: translateY(0); }
@@ -239,16 +236,16 @@
       .mobile-nav {
         gap: 0.8rem;
       }
-      
+
       .mobile-nav-icon {
         width: 36px;
         height: 36px;
       }
-      
+
       .mobile-nav-icon i {
         font-size: 18px;
       }
-      
+
       .mobile-notification-count {
         min-width: 16px;
         height: 16px;
@@ -259,7 +256,6 @@
 </head>
 <body>
   <header class="header-container">
-    <!-- Mobile Navigation Icons (visible only on mobile) -->
     <div class="mobile-nav">
       <% if (typeof locals !== 'undefined' && locals.userId) { %>
         <div class="mobile-settings-dropdown">
