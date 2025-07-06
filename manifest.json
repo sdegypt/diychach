@@ -1,0 +1,25 @@
+{
+  "name": "اعملها براك - منصة المشاريع والوظائف",
+  "short_name": "اعملها براك",
+  "description": "منصة شاملة للمشاريع والوظائف والتواصل المهني",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6c5ce7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/uploads/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/uploads/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "productivity", "social"],
+  "lang": "ar",
+  "dir": "rtl"
+}

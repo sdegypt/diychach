@@ -1,0 +1,53 @@
+User-agent: *
+Allow: /
+
+# السماح لجميع محركات البحث بالوصول للصفحات الرئيسية
+Allow: /forum
+Allow: /stores
+Allow: /jobs
+Allow: /projects
+Allow: /about
+Allow: /contact
+Allow: /privacy
+
+# منع الوصول للصفحات الحساسة
+Disallow: /admin/
+Disallow: /api/
+Disallow: /uploads/private/
+Disallow: /dashboard/
+Disallow: /messages/
+Disallow: /chat/
+Disallow: /notifications/
+Disallow: /profile/edit
+Disallow: /changePassword
+Disallow: /forgotPassword
+Disallow: /otpVerification
+
+# السماح بالوصول للصور والملفات العامة
+Allow: /uploads/images/
+Allow: /uploads/avatars/
+Allow: /uploads/stores/
+Allow: /uploads/products/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# خريطة الموقع
+Sitemap: https://www.diy-platform.com/sitemap.xml
+
+# معدل الزحف (اختياري)
+Crawl-delay: 1
+
+# تعليمات خاصة لمحركات بحث معينة
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
